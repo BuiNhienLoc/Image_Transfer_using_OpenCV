@@ -3,7 +3,7 @@ import time
 import imagezmq
 import cv2
  
-sender = imagezmq.ImageSender(connect_to='tcp://laptop:5555')
+sender = imagezmq.ImageSender(connect_to='tcp://10.11.6.67:5555')
  
 rpi_name = socket.gethostname() # send RPi hostname with each image
 cap = cv2.VideoCapture("traffic.mp4")
