@@ -2,7 +2,7 @@ import cv2
 import imagezmq
 
 # create a ZMQ sender object
-sender = imagezmq.ImageSender(connect_to='tcp://<ip_address>:5555')
+sender = imagezmq.ImageSender(connect_to='tcp://10.11.6.67:5555')
 
 # open the camera
 cap = cv2.VideoCapture(0)
